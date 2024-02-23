@@ -1,12 +1,12 @@
 import { Router } from 'express'
 
-import { MovieController } from '../controllers/movies.js'
+import { TodoController } from '../controllers/movies.js'
 
 export const todoRouter = Router()
 
-todoRouter.get('/', MovieController.getAll)
-todoRouter.post('/', MovieController.create)
+todoRouter.get('/', TodoController.getAll)
+todoRouter.post('/', TodoController.create)
 
-todoRouter.get('/:id', MovieController.getById)
-todoRouter.delete('/:id', MovieController.delete)
-todoRouter.patch('/:id', MovieController.update)
+todoRouter.get('/:id', TodoController.getById)
+todoRouter.delete('/:id', TodoController.delete)
+todoRouter.patch('/:id', TodoController.update)

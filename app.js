@@ -6,9 +6,9 @@ const app = express()
 app.use(json())
 app.disable('x-powered-by')
 
-// app.use(corsMiddleware)
+app.use(corsMiddleware())
 
-app.use('/movies', todoRouter)
+app.use('/todos', todoRouter)
 
 const PORT = process.env.PORT ?? 1234
 
