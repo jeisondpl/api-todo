@@ -1,36 +1,27 @@
-### Recuperar todas las películas
-GET http://localhost:1234/movies
+### Recuperar todas las Todos
+GET https://api-todo-dev-fjja.1.us-1.fl0.io/todos
 
-### Recuperar una película por id
-GET http://localhost:1234/movies/64d4d8825d614a4ec5984ae3
+### Recuperar una Todo por id
+GET https://api-todo-dev-fjja.1.us-1.fl0.io/todos/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
 
-### Recuperar todas las películas por un género
-GET http://localhost:1234/movies?genre=ACTION
+### Recuperar todas las Todos por un género
+GET http://localhost:1234/todo?genre=ACTION
 
-### Crear una película con POST
-POST http://localhost:1234/movies
+### Crear una Todo con POST
+POST https://api-todo-dev-fjja.1.us-1.fl0.io/todos
 Content-Type: application/json
-
 {
-  "sql": "SELECT * FROM users",
-  "title": "The Godfather",
-  "year": 1975,
-  "director": "Francis Ford Coppola",
-  "duration": 175,
-  "poster": "https://img.fruugo.com/product/4/49/14441494_max.jpg",
-  "genre": [
-    "Crime",
-    "Drama"
-  ]
+  "title": "jeison",
+  "done": false
 }
 
-### Borrar una película
-DELETE http://localhost:1234/movies/64d4d8825d614a4ec5984ae3
+### Borrar una Todo 
+DELETE http://localhost:1234/todo/64d4d8825d614a4ec5984ae3
 
-### Actualizar una película
-PATCH http://localhost:1234/movies/64d4da882f83563ab4f40632
+### Actualizar una Todo
+PATCH https://api-todo-dev-fjja.1.us-1.fl0.io/todos/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
 Content-Type: application/json
-
 {
-  "year": 2022
+  "title": "jeison",
+  "done":"true"
 }

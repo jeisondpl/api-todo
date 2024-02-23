@@ -8,7 +8,7 @@ import z from 'zod'
 // }
 
 const todoSchema = z.object({
-  id: z.number(),
+  // id: z.number(),
   title: z.string(),
   done: z.boolean(),
 })

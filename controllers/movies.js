@@ -28,6 +28,7 @@ export class TodoController {
     res.status(201).json(newTodo)
   }
 
+  
   static async delete(req, res) {
     const { id } = req.params
 
