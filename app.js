@@ -10,6 +10,8 @@ app.use(corsMiddleware())
 
 app.use('/todos', todoRouter)
 
+app.use("/")
+
 const PORT = process.env.PORT ?? 1234
 
 app.listen(PORT, () => {
