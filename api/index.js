@@ -1,6 +1,6 @@
 import express, { json } from 'express' // require -> commonJS
-import { todoRouter } from './routes/movies.js'
-import { corsMiddleware } from './middlewares/cors.js'
+import { todoRouter } from '../routes/movies.js'
+import { corsMiddleware } from '../middlewares/cors.js'
 
 const app = express()
 app.use(json())
